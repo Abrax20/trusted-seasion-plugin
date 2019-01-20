@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 import {
-  Container
+  Content,
+  Container,
 } from './styled';
 
 import {
@@ -12,18 +13,36 @@ import { addService } from "../../api";
 
 export default class AddService extends Component {
   state = {
-    service: ''
+    service: '',
+    success: false
   };
 
-  addAUserService = () => {
-    addService(this.state.service);
-    this.props.changePage(null);
+  addAUserService = async () => {
+    const data = await addService(this.state.service);
+    if (!data) {
+      return;
+    }
+
+    this.setState({ success: true });
   };
 
   render() {
+    if (this.state.success) {
+      return (
+        <Container>
+          <Content>
+            You added the service successfully! :)
+          </Content>
+          <Button onClick={() => this.props.changePage(null)}>Finish</Button>
+        </Container>
+      );
+    }
+
     return (
       <Container>
-        <Input value={this.state.service} onChange={event => this.setState({ service: event.target.value })} />
+        <Content>
+          <Input value={this.state.service} onChange={event => this.setState({ service: event.target.value })} />
+        </Content>
         <Button onClick={() => this.props.changePage(null)}>Back</Button>
         <Button onClick={this.addAUserService}>Add</Button>
       </Container>

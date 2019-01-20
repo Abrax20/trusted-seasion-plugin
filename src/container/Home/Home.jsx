@@ -30,9 +30,6 @@ export default class Home extends Component {
         <Button onClick={() => this.props.changePage('AddService')}>
           Add new Service
         </Button>
-        <Button onClick={this.closeSignatures}>
-          Close all open Signatures
-        </Button>
         <Button onClick={this.logout}>
           Logout
         </Button>

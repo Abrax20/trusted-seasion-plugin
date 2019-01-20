@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f12fc9bf-43ed-4184-99c1-47b45c229595" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/AddService/AddService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/AddService/AddService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container/AddService/AddService.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/AddService/AddService.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/AddService/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/AddService/styled.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/OnBoarding/OnBoarding.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/OnBoarding/OnBoarding.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/OnBoarding/OnBoarding.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/OnBoarding/OnBoarding.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/OnBoarding/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/OnBoarding/styled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,9 +33,9 @@
           <entry key="babelrc" value="1" />
           <entry key="css" value="7" />
           <entry key="html" value="3" />
-          <entry key="js" value="51" />
+          <entry key="js" value="55" />
           <entry key="json" value="8" />
-          <entry key="jsx" value="31" />
+          <entry key="jsx" value="35" />
           <entry key="png" value="1" />
           <entry key="prettierrc" value="1" />
           <entry key="ts" value="2" />
@@ -58,8 +47,8 @@
           <entry key="HTML" value="3" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="10" />
-          <entry key="JSX Harmony" value="31" />
-          <entry key="JavaScript" value="51" />
+          <entry key="JSX Harmony" value="35" />
+          <entry key="JavaScript" value="55" />
           <entry key="TypeScript" value="2" />
         </counts>
       </usages-collector>
@@ -67,9 +56,9 @@
         <counts>
           <entry key="css" value="115" />
           <entry key="html" value="41" />
-          <entry key="js" value="2559" />
+          <entry key="js" value="2627" />
           <entry key="json" value="416" />
-          <entry key="jsx" value="3014" />
+          <entry key="jsx" value="3286" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -77,9 +66,9 @@
           <entry key="CSS" value="115" />
           <entry key="HTML" value="41" />
           <entry key="JSON" value="416" />
-          <entry key="JSX Harmony" value="3014" />
-          <entry key="JavaScript" value="2517" />
-          <entry key="Less" value="42" />
+          <entry key="JSX Harmony" value="3286" />
+          <entry key="JavaScript" value="2583" />
+          <entry key="Less" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -93,10 +82,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/api.js">
+        <entry file="file://$PROJECT_DIR$/src/container/AddService/styled.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="36" />
+            <state relative-caret-position="132">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -136,15 +125,15 @@
         <option value="$PROJECT_DIR$/src/Container/Home/Home.jsx" />
         <option value="$PROJECT_DIR$/src/container/AddService/AddService.js" />
         <option value="$PROJECT_DIR$/src/container/OnBoarding/styled.js" />
-        <option value="$PROJECT_DIR$/src/container/AddService/styled.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/container/AddService/AddService.jsx" />
         <option value="$PROJECT_DIR$/src/container/OnBoarding/OnBoarding.jsx" />
-        <option value="$PROJECT_DIR$/src/container/Home/Home.jsx" />
         <option value="$PROJECT_DIR$/.prettierrc" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.eslintrc.json" />
         <option value="$PROJECT_DIR$/src/api.js" />
+        <option value="$PROJECT_DIR$/src/container/Home/Home.jsx" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/container/AddService/AddService.jsx" />
+        <option value="$PROJECT_DIR$/src/container/AddService/styled.js" />
       </list>
     </option>
   </component>
@@ -210,6 +199,14 @@
               <item name="plugin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="container" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="Home.jsx" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="container" type="462c0819:PsiDirectoryNode" />
               <item name="OnBoarding" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -269,18 +266,18 @@
       <updated>1547918399071</updated>
       <workItem from="1547918400475" duration="1820000" />
       <workItem from="1547927108834" duration="13300000" />
-      <workItem from="1547978330699" duration="3172000" />
+      <workItem from="1547978330699" duration="3972000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18292000" />
+    <option name="totallyTimeSpent" value="19092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24894515" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14225437" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -423,37 +420,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/AddService/styled.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/container/OnBoarding/OnBoarding.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/AddService/AddService.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -478,17 +448,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/Home/Home.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/api.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="17" column="36" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/Home/Home.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/AddService/AddService.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/AddService/styled.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
