@@ -1,28 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-class App extends Component {
+import Home from "./Container/Home/Home";
+import OnBoarding from "./Container/OnBoarding/OnBoarding";
+
+export default class App extends Component {
+  state = {
+    activePage: null
+  };
+
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+    switch (this.state.activePage) {
+      case 'onBoarding':
+        return <OnBoarding changePage={activePage => this.setState({ activePage })} />
+      default:
+          return <Home changePage={activePage => this.setState({ activePage })} />
+    }
   }
-}
-
-export default App;
+};
