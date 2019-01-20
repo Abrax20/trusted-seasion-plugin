@@ -10,8 +10,7 @@ export const Footer = styled.div`
 
 export const Container = styled.div`
   flex: 1;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 12px;
   
   textarea {
     overflow-y: scroll;

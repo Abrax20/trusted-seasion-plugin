@@ -12,7 +12,7 @@ export default class AddService extends Component {
   render() {
     return (
       <Container>
-        <Button>Back</Button>
+        <Button onClick={() => this.props.changePage(null)}>Back</Button>
       </Container>
     );
   }

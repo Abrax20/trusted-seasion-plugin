@@ -11,7 +11,7 @@ export default class App extends Component {
 
   render() {
     switch (this.state.activePage) {
-      case 'Add Service':
+      case 'AddService':
         return <AddService changePage={activePage => this.setState({ activePage })} />;
       case 'onBoarding':
         return <OnBoarding changePage={activePage => this.setState({ activePage })} />;
