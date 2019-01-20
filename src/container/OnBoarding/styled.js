@@ -11,7 +11,7 @@ export const Footer = styled.div`
 export const Container = styled.div`
   flex: 1;
   padding: 12px;
-  
+
   textarea {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -21,8 +21,8 @@ export const Container = styled.div`
 `;
 
 export const LoaderWrapper = styled.div`
-  display: flex; 
+  display: flex;
   height: 100px;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 `;

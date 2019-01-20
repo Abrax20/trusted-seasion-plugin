@@ -10,15 +10,23 @@ import {
 
 import { ClipLoader } from 'react-spinners';
 
-import keypair from 'keypair';
-import { register } from "../../api";
-import { PRIVATE_KEY, PUBLIC_KEY } from "../../constans/LocalStorage";
+import { PRIVATE_KEY } from "../../constans/LocalStorage";
 import { Button, Form, TextArea } from 'semantic-ui-react';
 
 export default class OnBoarding extends Component {
   state = {
     key: '',
     isLoading: false
+  };
+
+  revisedRandId = () => {
+    const length = 81;
+    let retVal = '';
+    let charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ9";
+    for (let i = 0, n = charset.length; i < length; ++i) {
+      retVal += charset.charAt(Math.floor(Math.random() * n));
+    }
+    return retVal;
   };
 
   download = (filename, text) => {
@@ -38,12 +46,11 @@ export default class OnBoarding extends Component {
   generate = () => {
     this.setState({ isLoading: true }, () => {
       setTimeout(async () => {
-        const keyChain = keypair();
-        this.setState({ public: keyChain.public, private: keyChain.private });
-        localStorage.setItem(PRIVATE_KEY, keyChain.private);
-        localStorage.setItem(PUBLIC_KEY, keyChain.public);
-        this.download('keychain.txt', keyChain.public + "\n\n" + keyChain.private);
-        await register(keyChain.public, keyChain.private);
+        //const keyChain = keypair();
+        const key = this.revisedRandId();
+        this.setState({ private: key });
+        localStorage.setItem(PRIVATE_KEY, key);
+        this.download('masterKey.txt', key);
         this.props.changePage(null);
         this.setState({ isLoading: false })
       }, 1000);
@@ -74,9 +81,7 @@ export default class OnBoarding extends Component {
                     loading={this.state.loading}/>
                 </LoaderWrapper>
               : <Fragment>
-                  <TextArea autoHeight placeholder='Public Key' value={this.state.private}
-                        onChange={e => this.setState({ private: e.target.value })}/>
-                  <TextArea autoHeight placeholder='Private Key' value={this.state.private}
+                  <TextArea autoHeight placeholder='Master Key' value={this.state.private}
                           onChange={e => this.setState({ private: e.target.value })}/>
                 </Fragment>
           }

@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 import {
   Container,
 } from './styled.js';
-import { PRIVATE_KEY, PUBLIC_KEY } from "../../constans/LocalStorage";
+import { PRIVATE_KEY } from "../../constans/LocalStorage";
 
 import { Button } from 'semantic-ui-react';
+import {shoutdown} from "../../api";
 
 export default class Home extends Component {
   state = {
@@ -15,23 +16,13 @@ export default class Home extends Component {
 
   logout = () => {
     localStorage.removeItem(PRIVATE_KEY);
-    localStorage.removeItem(PRIVATE_KEY);
     this.props.changePage('onBoarding');
   };
 
-  closeSignatures = () => {};
+  closeSignatures = () => {
+    shoutdown();
+  };
 
-  componentDidMount () {
-    const privateKey = localStorage.getItem(PRIVATE_KEY);
-    const publicKey = localStorage.getItem(PUBLIC_KEY);
-
-    if (!privateKey || !publicKey) {
-      this.props.changePage('onBoarding');
-      return;
-    }
-
-    this.setState({ public: publicKey, private: privateKey });
-  }
 
   render() {
     return (
