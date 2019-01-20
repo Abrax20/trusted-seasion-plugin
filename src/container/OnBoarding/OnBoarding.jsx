@@ -44,6 +44,7 @@ export default class OnBoarding extends Component {
         localStorage.setItem(PUBLIC_KEY, keyChain.public);
         this.download('keychain.txt', keyChain.public + "\n\n" + keyChain.private);
         await register(keyChain.public, keyChain.private);
+        this.props.changePage(null);
         this.setState({ isLoading: false })
       }, 1000);
     });

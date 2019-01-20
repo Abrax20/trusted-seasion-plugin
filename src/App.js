@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
-import Home from "./Container/Home/Home";
-import OnBoarding from "./Container/OnBoarding/OnBoarding";
+import Home from "./container/Home/Home";
+import OnBoarding from "./container/OnBoarding/OnBoarding";
+import AddService from "./container/AddService/AddService";
 
 export default class App extends Component {
   state = {
@@ -10,8 +11,10 @@ export default class App extends Component {
 
   render() {
     switch (this.state.activePage) {
+      case 'Add Service':
+        return <AddService changePage={activePage => this.setState({ activePage })} />;
       case 'onBoarding':
-        return <OnBoarding changePage={activePage => this.setState({ activePage })} />
+        return <OnBoarding changePage={activePage => this.setState({ activePage })} />;
       default:
           return <Home changePage={activePage => this.setState({ activePage })} />
     }
